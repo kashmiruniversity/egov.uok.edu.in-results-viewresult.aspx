@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Kashmir - View Result</title>
+    <meta name="discription" content="BG Ist Semester (Batch-2022) Under NEP 2020 Examination Regular Batch 2022 held in Dec, 2022">
+    <link rel="stylesheet" href="https://egov.uok.edu.in/results/App_Themes/Navy/default.css">
+    <style type="text/css">
+        @font-face {
+          font-weight: 400;
+          font-style:  normal;
+          font-family: circular;
+        
+          src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+        }
+        
+        @font-face {
+          font-weight: 700;
+          font-style:  normal;
+          font-family: circular;
+        
+          src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+        }
+        /* Make a Loader */
+        .loader{
+            border: 16px solid #231111; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }
+        /* End of Loader */
+        /* Make a searching loader */
+        .searching-loader{
+            border: 16px solid #231111; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+        }
+        /* End of searching loader */
+        </style>
+</head>
+<body>
+    <div align="center">
+        
+        <div id="bar">
+            <div class="hdralign">
+                <div class="logo">
+                    <img src="https://egov.uok.edu.in/results/images/logo2.gif" alt="univ logo" height="54px">
+                </div>
+                <div class="title">
+                    University of Kashmir</div>
+                
+                <div class="resultinfo">
+                    
+        <span id="ctl00_cpInfoBar_lblResultDetails">BG Ist Semester (Batch-2022) Under NEP 2020
+         Examination Regular Batch 2022 held in Dec, 2022</span>
+
+                </div>
+            </div>
+        </div>
+        <div style="clear: both; height: 1px; width: 5px">
+        </div>
+        <div id="bodyblock" align="right">
+            <div id="l-col" align="center">
+                <table class="htable">
+                    <tbody><tr style="margin-bottom: 10px; background: #1E3C62; text-align: center; color: #FFF7D7;">
+                        <td style="border: inset 3px #000099; padding-bottom: 2px;">
+                            <a id="ctl00_lnkUniversity" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkUniversity&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://kashmiruniversity.net/&quot;, false, true))" style="color: #FFFFFF; font-weight: bold;">Home</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_lnkHome" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkHome&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Default.aspx&quot;, false, true))">Latest Results</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_lnkPgProf" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkPgProf&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=1&amp;rs=1&quot;, false, true))">PG Professional</a>
+                        </td>
+                    </tr>
+                    <tr>
+                    
+                    <td>
+                    <a id="ctl00_lnkPGNotifications" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkPGNotifications&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=9&amp;rs=1&quot;, false, true))">PG Prof Notifications</a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_lnkPgNonProf" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkPgNonProf&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=2&amp;rs=1&quot;, false, true))">PG Non-Professional</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_LinkButton4" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButton4&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=10&amp;rs=1&quot;, false, true))">PG Non-Prof Notifications</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_lnkUGProf" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkUGProf&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=3&amp;rs=2&quot;, false, true))">UG Professional</a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>
+                      <a id="ctl00_LinkButton1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=11&amp;rs=2&quot;, false, true))">UG Prof Notifications</a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_lnkUGNonProf" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkUGNonProf&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=4&amp;rs=2&quot;, false, true))">UG Non-Professional</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                          
+                      <a id="ctl00_LinkButton5" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButton5&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=12&amp;rs=2&quot;, false, true))">UG Non-Prof Notifications</a>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_LinkButton6" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButton6&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=14&amp;rs=5&quot;, false, true))">MBBS</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_LinkButton2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButton2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=8&amp;rs=3&quot;, false, true))">B.E.D.</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_LinkButton3" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButton3&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=13&amp;rs=3&quot;, false, true))">B.E.D. Notifications</a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <hr>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_lnkPGDiploma" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkPGDiploma&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=5&amp;rs=4&quot;, false, true))">PG Diploma Courses</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_lnkCertificateCourses" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkCertificateCourses&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=6&amp;rs=4&quot;, false, true))">Certificate Courses</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="ctl00_lnkDiplomaCourses" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$lnkDiplomaCourses&quot;, &quot;&quot;, false, &quot;&quot;, &quot;results.aspx?rtype=7&amp;rs=4&quot;, false, true))">Diploma Courses</a>
+                        </td>
+                    </tr>
+                    
+                </tbody></table>
+            </div>
+            <div clear="both">
+            </div>
+            <div id="cont">
+                
+ <script type="text/javascript">
+function ValidateInput() 
+{ 
+            var validationMessage = "Input Values"; 
+            var isValid = true; 
+            // keep as many as you want 
+            var inputControl = ['ctl00_cphMain_ddlColleges' ];
+              if( document.getElementById(inputControl).selectedIndex < 1)
+              {
+                alert("Please select a college.");
+                return false;
+              }   
+} 
+
+</script>
+    <div id="tdiv" style="width: 100%; border: solid 0px #FFFFFF;">
+        <table border="0" width="99%" cellspacing="1" cellpadding="0" class="vtable">
+            <tbody><tr>
+                <td colspan="3">
+                    Select selection criteria
+                </td>
+                <td>
+                    <span id="ctl00_cphMain_Label1">View college result</span>
+                </td>
+                <td>
+                    Filter result by marks
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table id="ctl00_cphMain_rblist1" border="0">
+	<tbody><tr>
+		<td><input id="ctl00_cphMain_rblist1_0" type="radio" name="ctl00$cphMain$rblist1" value="1" checked="checked"><label for="ctl00_cphMain_rblist1_0">Roll No</label></td><td><input id="ctl00_cphMain_rblist1_1" type="radio" name="ctl00$cphMain$rblist1" value="2" ><label for="ctl00_cphMain_rblist1_2">Registration No</label></td>
+	</tr>
+</tbody></table>
+                </td>
+                <td>
+                    <div id="ctl00_cphMain_Panel2" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_cphMain_btnColleges')">
+	
+                        <select name="ctl00$cphMain$ddlColleges" id="ctl00_cphMain_ddlColleges" tabindex="3" class="collegesddl">
+		<option selected="selected" value="-1">Select All Colleges</option>
+		<option value="A">AMAR SINGH COLLEGE SRINAGAR</option>
+		<option value="ACE">SHEIKHUL ALAM COLLEGE OF EDUCATION, KUPWARA</option>
+		<option value="AJ">GOVT. DEGREE COLLEGE AJAS BANDIPORA</option>
+		<option value="ANG">GOVT. DEGREE COLLEGE BOYS ANANTNAG</option>
+		<option value="AP">Govt. Degree college Awantipora</option>
+		<option value="AW">GOVT. DEGREE COLLEGE FOR WOMEN, ANANTNAG</option>
+		<option value="BC">GOVT DEGREE COLLEGE BEMINA</option>
+		<option value="BJB">GOVT DEGREE COLLEGE BIJBEHARA</option>
+		<option value="BN">GOVT. DEGREE COLLEEG BONIYAR</option>
+		<option value="BPB">GOVT. DEGREE COLLEGE, BANDIPORA</option>
+		<option value="BRU">GOVT. DEGREE COLLEGE BEERWAH</option>
+		<option value="BSP">GOVT DEGREE COLLEGE BOMAI</option>
+		<option value="BUD">GOVT. DEGREE COLLEGE, BUDGAM</option>
+		<option value="BW">GOVT. COLLEGE FOR WOMEN BARAMULLA</option>
+		<option value="CD">GOVT DEGREE COLLEGE CHADOORA</option>
+		<option value="CHS">GOVT DEGREE COLLEGE CHARAR-I-SHARIEF</option>
+		<option value="CST">CASSET COLLEGE OF COMPUTER SCIENCES, SRINAGAR</option>
+		<option value="DHP">GOVT DEGREE COLLEGE DAMHAL HANGIPORA KULGAM</option>
+		<option value="DOC">DOEACE College</option>
+		<option value="DRA">GOVT. DEGREE COLLEGE, DOORU</option>
+		<option value="DW">GOVT. DEGREE COLLEGE DANGIWACHA</option>
+		<option value="FK">GOVT. DEGREE COLLEGE FRISAL</option>
+		<option value="G">GANDHI MEMORIAL COLLEGE</option>
+		<option value="GBL">GOVT. DEGREE COLLEGE, GANDERBAL</option>
+		<option value="GCJ">GANDHI COLLEGE JAMMU</option>
+		<option value="GLCE">GREENLAND COLLEGE OF EDUCATION HAWAL, SRINAGAR</option>
+		<option value="GZ">GOVT DEGREE COLLEGE GUREZ</option>
+		<option value="HD">GOVT. DEGREE COLLEGE, HANDWARA</option>
+		<option value="HJ">GOVT. DEGREE COLLEGE HAJIN</option>
+		<option value="HP">GOVT. DEGREE COLLEGE HADIPORA, SOPORE</option>
+		<option value="IC">Islamia College Of Science and Commerce(UGC Autonomous)</option>
+		<option value="IITM">IQBAL INSTITUTE OF TECHNOLOGY AND MANAGEMENT</option>
+		<option value="JB">JAMIA-TUL-BANAT LAL BAZAR SRINAGAR</option>
+		<option value="JSU">JAMIA SIRAJ-UL-ULOOM HILLOW IMAMSAHIB SHOPIAN</option>
+		<option value="KC">GOVT. DEGREE COLLEGE, KUPWARA</option>
+		<option value="KGN">GOVT DEGREE COLLEGE KANGAN</option>
+		<option value="KL">GOVT DEGREE COLLEGE KELEM</option>
+		<option value="KN">GOVT DEGREE COLLEGE KOKERNAG</option>
+		<option value="KP">GOVT.DEGREE COLLEGE KRALPORA</option>
+		<option value="KS">GOVT DEGREE COLLEGE KHANSHAB</option>
+		<option value="KUL">GOVT. DEGREE COLLEGE, KULGAM</option>
+		<option value="KW">GOVT DEGREE COLLEGE (Women)KUPWARA</option>
+		<option value="LA">GOVT DEGREE COLLEGE VAILOO LARNOO ANATNAG</option>
+		<option value="LG">GOVT. DEGREE COLLEGE LANGATE</option>
+		<option value="MAG">GOVT DEGREE COLLEGE MAGAM</option>
+		<option value="MTN">GOVT. DEGREE COLLEGE MATTAN</option>
+		<option value="NW">GOVT. COLLEGE FOR WOMEN, NAWAKADAL</option>
+		<option value="PC">GOVT. DEGREE COLLEGE, PULWAMA</option>
+		<option value="PMP">GOVT DEGREE COLLEGE PAMPORE</option>
+		<option value="PRA">Private Anantnag</option>
+		<option value="PRB">Private Baramulla</option>
+		<option value="PRBD">Private Bandipora</option>
+		<option value="PRBM">Private Budgam</option>
+		<option value="PRG">Private Ganderbal</option>
+		<option value="PRK">Private Kupwara</option>
+		<option value="PRKU">Private Kulgam</option>
+		<option value="PRP">Private Pulwama</option>
+		<option value="PRS">Private Sringar</option>
+		<option value="PRSH">Private Shopian</option>
+		<option value="PTN">GOVT. DEGREE COLLEGE, PATTAN</option>
+		<option value="PW">GOVT DEGREE COLLEGE WOMEN PULWAMA</option>
+		<option value="QZ">GOVT DEGREE COLLEGE QAZIGUND</option>
+		<option value="RP">GOVT. DEGREE COLLEGE RAJPORA</option>
+		<option value="S">S P COLLEGE SRINAGAR</option>
+		<option value="SB">GOVT DEGREE COLLEGE SOIBUGH</option>
+		<option value="SC">GOVT. DEGREE COLLEGE, SHOPIAN</option>
+		<option value="SEM">SEM COLLEGE OF EDUCATION</option>
+		<option value="SG">GOVT DEGREE COLLEGE SOGAM</option>
+		<option value="SJ">GOVT. DEGREE COLLEGE FOR BOYS BARAMULA</option>
+		<option value="sme">SSM COLLEGE OF ENGINEERING</option>
+		<option value="SMI">SM IQBAL COLLEGE</option>
+		<option value="SP">GOVT. DEGREE COLLEGE, SOPORE</option>
+		<option value="SPW">GOVT DEGREE COLLEGE SOPORE FOR WOMEN</option>
+		<option value="SUM">GOVT DEGREE COLLEGE SUMBAL</option>
+		<option value="SW">SRINAGAR WOMEN COLLEGE</option>
+		<option value="TC">GOVT. DEGREE COLLEGE, TRAL</option>
+		<option value="TG">GOVT DEGREE COLLEGE TANGDAR</option>
+		<option value="TI">ISLAMIA ORIENTAL COLLEGE, TRAL</option>
+		<option value="TK">GOVT. DEGREE COLLEGE THINDUM KREERI</option>
+		<option value="TL">GOVT DEGREE COLLEGE TULAIL</option>
+		<option value="TMG">G0VT DEGREE COLLEGE TANGMARG</option>
+		<option value="URI">GOVT DEGREE COLLEGE URI</option>
+		<option value="UT">GOVT DEGREE COLLEGE UTROSU</option>
+		<option value="VB">VISHWA BHARTI COLLEGE FOR WOMEN</option>
+		<option value="VG">GOVT. DEGREE COLLEGE VILGAM</option>
+		<option value="VNG">Govt Degree College Verinag.</option>
+		<option value="ZP">Govt. Degree College,Zainapora</option>
+
+	</select>
+                        <input type="submit" name="ctl00$cphMain$btnColleges" value="View" id="ctl00_cphMain_btnColleges" tabindex="4">
+                        <input type="submit" name="ctl00$cphMain$btnPrintResults" value="Print" onclick="return ValidateInput();" id="ctl00_cphMain_btnPrintResults">
+                    
+</div>
+                </td>
+                <td>
+                    <div id="ctl00_cphMain_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_cphMain_btnMarks')">
+	
+                        <span id="ctl00_cphMain_lable2">Marks</span>
+                        <select name="ctl00$cphMain$ddlOperator" id="ctl00_cphMain_ddlOperator" tabindex="6">
+		<option value="1">&gt;</option>
+		<option value="2">&lt;</option>
+		<option value="3">=</option>
+
+	</select>
+                        <input name="ctl00$cphMain$txtMarks" type="text" maxlength="4" size="6" id="ctl00_cphMain_txtMarks" tabindex="7">
+                        <span id="ctl00_cphMain_regExpVal" style="color:Red;visibility:hidden;">*</span>
+                        <input type="button" name="ctl00$cphMain$btnMarks" value="View" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphMain$btnMarks&quot;, &quot;&quot;, true, &quot;valGrpMarks&quot;, &quot;&quot;, false, true))" id="ctl00_cphMain_btnMarks" tabindex="8">
+                    
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 65px">
+                    <span id="ctl00_cphMain_lbl1">Roll No:</span>
+                </td>
+                <td style="width: 120px">
+                    <div id="ctl00_cphMain_Panel3" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_cphMain_btnSearch')">
+	
+                        <input name="ctl00$cphMain$txtSearch" type="text" maxlength="50" id="ctl00_cphMain_txtSearch" tabindex="1" style="width:118px;">
+                    
+</div>
+                </td>
+                <td>
+                    <input type="submit" name="ctl00$cphMain$btnSearch" value="Search" id="ctl00_cphMain_btnSearch" tabindex="2">
+                </td>
+                <td>
+                    
+                    
+                </td>
+                <td>
+                    <div id="ctl00_cphMain_valSmryMarks" style="color:Red;height:16px;display:none;">
+
+</div>
+                </td>
+            </tr>
+            <tr style="background: #FFFFFF; height:12px; ">
+                <td colspan="5">
+                    <span id="ctl00_cphMain_lbl3" style="color:Red;padding-left: 10px;"></span>
+                       
+                </td>
+                
+            </tr>
+            <tr style="background: #FFFFFF; height:12px; width:500px; ">
+             <td>
+             &nbsp;
+                </td>
+                <td>
+                </td>
+                </tr>
+            <tr style="border-top: solid 1px #0000FF;background: #FFFFFF; color:Black; height:12px;">
+            
+                <td style="border-top: solid 1px #000000;" colspan="4">
+                    
+                    <span id="ctl00_cphMain_lblTitle" style="font-size: .9em;"></span>
+                    
+                   
+                </td>
+                <td style="border-top: solid 1px #000000;">
+               
+                </td>
+            </tr>
+                                    
+        </tbody></table>
+    </div>
+  
+                        
+    <div id="detailsDiv" class="detailsdiv">
+    
+        Loder Will Be Here
+    </div>
+
+            </div>
+        </div>
+        <div style="clear: both">
+        </div>
+        <div id="footer">
+            ©2010 Directorate of Information Technology &amp; Support System,University of
+            Kashmir<br> <strong>Managed &amp; Updated by Examination Wing</strong>
+        </div>
+    </div>
+
+    <script>
+        const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+}
+
+        let btn = document.getElementById('ctl00_cphMain_btnColleges');
+        let btnSearch = document.getElementById('ctl00_cphMain_btnSearch');
+        // console.log('btn', btn)
+        btn.addEventListener('click', (e)=>{
+            e.preventDefault()
+            console.log("clicked")
+            // Show loader in detailsDiv
+            let detailsDiv = document.getElementById('detailsDiv')
+            detailsDiv.innerHTML = '<div class="loader"></div>'
+            // Get the selected college
+
+        })
+        btnSearch.addEventListener('click', (e)=>{
+            e.preventDefault()
+            // console.log("clicked")
+            // Show loader in detailsDiv
+            let detailsDiv = document.getElementById('detailsDiv')
+            detailsDiv.innerHTML = '<div class="searching-loader"></div>'
+            setTimeout(()=>{
+                detailsDiv.innerHTML = `<div>
+  <table
+    cellspacing="0"
+    border="0"
+    id="ctl00_cphMain_grdResult"
+    style="background-color: White; width: 900px; border-collapse: collapse"
+  >
+    <tbody>
+      <tr
+        align="left"
+        style="
+          color: White;
+          background-color: #1e3c62;
+          font-size: 11px;
+          font-weight: normal;
+          height: 20px;
+        "
+      >
+        <th scope="col">Roll No</th>
+        <th scope="col">Reg No</th>
+        <th scope="col">Name</th>
+        <th scope="col">Subjects</th>
+        <th scope="col">Result</th>
+      </tr>
+      <tr class="grdRow">
+        <td class="gridcell" style="width: 60px">${parseInt(Math.random(22343774757)*100000000)}</td>
+        <td class="gridcell" style="width: 110px">8837-${generateString(3)}-${parseInt(Math.random(22343774757)*1000)}</td>
+        <td class="gridcell" style="width: 175px">Null</td>
+        <td class="gridcell" style="width: 445px">
+            ENG320(9) PS320(15;25) SO320(30;20) URM320(12;15) 
+            
+        </td>
+        <td class="gridcell" style="width: 100px">R ENG320, PS320, SO320</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`
+
+            }, 5000)
+            
+            setTimeout(()=>{
+                detailsDiv.innerHTML = `<img src='https://sd.keepcalms.com/i-w600/keep-calm-you-ve-been-pranked.jpg' width=22%/>
+
+                <img src='https://media.tenor.com/iohRIQ_1dHAAAAAC/youve-been-pranked-chris.gif' width=22%/>`
+            // Get the selected college
+                }, 10000)
+        })
+    </script>
+</body>
+</html>
